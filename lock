@@ -1,0 +1,2 @@
+#To disable screen locking, when screensaver on
+gsettings set org.gnome.desktop.screensaver lock-enabled false
