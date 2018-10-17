@@ -52,6 +52,10 @@ mv gnome-shell-extension-installer /usr/bin/
 gnome-shell-extension-installer 517 --yes #caffeine
 gnome-shell-extension-installer 15 --yes #alternatetab
 
+#enable tap-to-click
+
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+
 # end
 
 echo "All done. Restart computer now?"
