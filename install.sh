@@ -2,9 +2,7 @@
 
 # install telegram messenger
 
-sudo add-apt-repository ppa:atareao/telegram -y
-sudo apt update
-sudo apt install telegram
+sudo snap install telegram-desktop
 
 # installing yandex.browser
 wget -q -O - https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | sudo apt-key add -
