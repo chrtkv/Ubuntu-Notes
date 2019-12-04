@@ -3,6 +3,7 @@
 # install telegram messenger
 
 sudo snap install telegram-desktop
+sudo snap install slack --classic
 
 # installing yandex.browser
 wget -q -O - https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | sudo apt-key add -
