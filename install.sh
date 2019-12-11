@@ -4,27 +4,21 @@
 
 sudo snap install telegram-desktop
 sudo snap install slack --classic
+sudo snap install code --classic
+sudo snap install opera
+sudo snap install ripgrep --classic
 
-# installing yandex.browser
+# install yandex.browser
 wget -q -O - https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | sudo apt-key add -
-
 sudo sh -c 'echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" > /etc/apt/sources.list.d/yandex-browser-beta.list'
-
 sudo apt update
-
 sudo apt install yandex-browser-beta
 
-# installing yandex.disk
+# install yandex.disk
 echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/yandex.list > /dev/null && wget http://repo.yandex.ru/yandex-disk/YANDEX-DISK-KEY.GPG -O- | sudo apt-key add - && sudo apt-get update && sudo apt-get install -y yandex-disk
 
-# installing vs code
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-sudo apt-get update
-sudo apt-get install code # or code-insiders
-
 #install utils
+sudo apt install htop
 
 sudo apt install ncdu
 sudo apt install vim
@@ -32,7 +26,7 @@ sudo apt install curl
 sudo apt install mc
 sudo apt install openvpn
 
-#setting up default gnome shell
+#set up default gnome shell
 
 sudo apt install gnome-session
 sudo apt install ubuntu-gnome-default-settings
@@ -54,6 +48,9 @@ gnome-shell-extension-installer 15 --yes #alternatetab
 #enable tap-to-click
 
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+
+# fonts 
+sudo apt-get install ttf-mscorefonts-installer
 
 # end
 
